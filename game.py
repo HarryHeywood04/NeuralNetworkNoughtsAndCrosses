@@ -4,7 +4,7 @@ from tensorflow import keras
 import numpy as np
 
 # SETTINGS
-AI_MODEL = 'nexus'  # Change which model to use here
+AI_MODEL = 'multi'  # Change which model to use here
 
 playerTurn = True
 state = [0, 0, 0, 0, 0, 0, 0, 0, 0]

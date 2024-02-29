@@ -3,13 +3,15 @@ import numpy as np
 import json
 
 # SETTINGS
-INNER_NODES = [128]
+INNER_NODES = [128]  # Both INNER_NODES and INNER_ACTIVATION must have the same amount of entries
 INNER_ACTIVATION = ['tanh']
 OPTIMIZER = 'adam'
 LOSS = 'sparse_categorical_crossentropy'
 EPOCHS = 20
-MODEL_NAME = 'nexus'
+MODEL_NAME = 'nexus'  # This is the name of the file the model will save too
 
+# The training data was created from my minimax noughts and crosses AI,
+# available at https://www.harryheywood.co.uk/ai-playground/noughts-and-crosses/index.html
 train_data_file = open('data/train_data.json')
 train_values_file = open('data/train_values.json')
 train_data = np.asfarray(json.load(train_data_file))
